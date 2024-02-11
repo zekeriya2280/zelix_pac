@@ -117,12 +117,12 @@ class _IntroState extends State<Intro>{
 
       appBar: AppBar(
         
-        backgroundColor: Colors.black,
+        backgroundColor: const Color.fromARGB(255, 119, 109, 94),
         actions: [
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: GestureDetector(
-              child: const Icon(Icons.playlist_add_check_circle_outlined),
+              child: const Icon(Icons.playlist_add_check_circle_outlined,color: Colors.white),
               onTap: ()async{
                 await Navigator.push(context,
                             MaterialPageRoute(builder: (context) => const PlayerList()));
@@ -132,7 +132,7 @@ class _IntroState extends State<Intro>{
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: GestureDetector(
-              child: const Icon(Icons.question_mark),
+              child: const Icon(Icons.question_mark,color: Colors.white),
               onTap: ()async{
                 await Navigator.push(context,
                             MaterialPageRoute(builder: (context) => const HowToPlay()));
@@ -142,7 +142,7 @@ class _IntroState extends State<Intro>{
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: GestureDetector(
-              child: const Icon(Icons.settings),
+              child: const Icon(Icons.settings,color: Colors.white),
               onTap: ()async{
               //  await Navigator.push(context,
               //              MaterialPageRoute(builder: (context) => HowToPlay()));
@@ -157,12 +157,12 @@ class _IntroState extends State<Intro>{
                    await FirebaseAuth.instance.signOut().then((value) async => await Navigator.pushReplacement(context,
                             MaterialPageRoute(builder: (context) => const SignIn())));
               },
-              child: const Icon(Icons.logout,)),
+              child: const Icon(Icons.logout,color: Colors.white)),
           ),
         ],
         title: const Padding(
-          padding: EdgeInsets.only(left:50),
-          child: Text('Zelix Pac'),
+          padding: EdgeInsets.only(left:5),
+          child: Text('Zelix Pac',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,letterSpacing: 2,fontFamily: 'Times New Roman'),),
         ),
       ),
       body: SingleChildScrollView(

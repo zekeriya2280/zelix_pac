@@ -840,7 +840,7 @@ void startGame() {
     width = MediaQuery.of(context).size.width;
     height = MediaQuery.of(context).size.height;
     if(lose){timetimer.cancel();playertimer.cancel();monstertimer.cancel();
-    print('loooose');
+    //print('loooose');
     }
     if(win){timetimer.cancel();playertimer.cancel();monstertimer.cancel();
        usersCollection.doc(FirebaseAuth.instance.currentUser!.displayName).update({'time':time.toString()});
@@ -881,7 +881,7 @@ void startGame() {
                                padding: const EdgeInsets.all(20.0),
                                child: Text(
                                  'SCORE : $score',
-                                 style: const TextStyle(fontSize: 50,color: Colors.green),
+                                 style: const TextStyle(fontSize: 50,color: Color.fromARGB(255, 124, 238, 127)),
                                ),
                              ),
                            ],
@@ -961,7 +961,7 @@ void startGame() {
                                           padding: const EdgeInsets.all(30.0),
                                           child: Text(
                                             'SCORE : $score',
-                                            style: const TextStyle(fontSize: 50,color: Colors.green),
+                                            style: const TextStyle(fontSize: 50,color: Color.fromARGB(255, 102, 195, 106)),
                                           ),
                                         ),
                               ],
@@ -1117,7 +1117,7 @@ void startGame() {
                                                 color: Colors.black,
                                               ));
                                         }
-                                      } else if (food.contains(index)) {
+                                      } else if (monsterpath.contains(index)) {
                                         if (monster == index) {
                                             monsterpath.add(index);
                                           
@@ -1194,7 +1194,7 @@ void startGame() {
                             flex: 1,
 
                             child: Container(
-                                color: const Color.fromARGB(144, 139, 195, 74),
+                                color: const Color.fromARGB(144, 136, 255, 0),
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
