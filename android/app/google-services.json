@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "8172561421",
+    "project_id": "zelix-pac-a27ea",
+    "storage_bucket": "zelix-pac-a27ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8172561421:android:b6eafb575ce8090ce36144",
+        "android_client_info": {
+          "package_name": "com.zelixpac.forjob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8172561421-5kpm2mapk8kgh26gqbs19c6di8lc855e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGPL0U3iLX_anIDlWbheFTmMGp9qmRz7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8172561421-5kpm2mapk8kgh26gqbs19c6di8lc855e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
